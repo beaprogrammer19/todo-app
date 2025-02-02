@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid lime; */
+}
+
+:root {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* font-size: 1rem; */
+  font: inherit;
+}
+
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: aliceblue;
+  font-family: 'Inter';
+}
+
+.app {
+
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  padding: 0rem 2rem;
+
+  background-color: aliceblue;
+
+  overflow: hidden;
+  position: relative;
+}
+
+/* ------------------------------------------------- */
+
+.app-user{
+  margin-top: 2rem;
+  max-height: 3rem;
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  
+}
+.user-greet h1{
+  font-size: 1.2rem;
+}
+/* ------------------------------------------------- */
+
+.tasks-count {}
+
+.tasks-count h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.tasks-count h1>span {
+  color: black;
+
+}
+
+/* ------------------------------------------------- */
+
+.tasks{
+  height: 100%;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 3rem;
+
+}
+
+.tasks::-webkit-scrollbar {
+  display: none; 
+}
+
+.quote{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ 
+}
+.task{
+ padding: 1.5rem;
+ background-color: pink;
+ border-radius: .5rem;
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+
+}
+
+
+.task-title{
+  font-size: 1.2rem;
+}
+
+.task-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.task-details .one{
+  display: flex;
+  gap: .5rem;
+}
+.task-details .one > div{
+  padding: .3rem .8rem;
+  border: 1px solid black;
+  border-radius: 22px;
+  font-size: .8rem;
+  display: none;
+}
+
+/* .task-details .status{
+
+  
+} */
+/* ------------------------------------------------- */
+
+.tasks-add{
+  position: absolute;
+  bottom: -12rem;
+  height: 3rem;
+  background-color: #a3c4f3;
+  border-radius: 1rem 1rem 0 0 ;
+  /* border: 1px solid black; */
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+
+  padding: 2rem;
+
+
+height: 12rem;
+
+}
+
+
+.add-slider{
+  position: absolute;
+
+  top: -6rem;
+  height: 3rem;
+  width: 3rem;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -0%);  
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.247);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: black;
+
+}
+.add-slider > i{
+  text-align: center;
+  color: #fff;
+}
+
+.tasks-add .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.inputs > input {
+  padding: .4rem .8rem;
+  height: 3rem;
+  border-radius: .5rem;
+  outline: none;
+  border: none;
+}
+.inputs > button{
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+  cursor: pointer;
+  background-color: #506799;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.status, .delete-button {
+  cursor: pointer;
+  padding: .3rem .8rem;
+  border: 1px solid black;
+  border-radius: 22px;
+  font-size: .8rem;
+}
+/* ------------------------------------------------- */
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+
