@@ -1,4 +1,4 @@
-const API_URL = 'https://todo-app-mao2.onrender.com';
+const API_URL = 'https://todo-app-mao2.onrender.com/api/tasks';
 
 let tasksDrawer = document.querySelector('.tasks-add');
 let drawerTrigger = document.querySelector('.add-slider');
