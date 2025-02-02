@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://todo-app-mao2.onrender.com'
+  origin: 'https://todo-app-1-23ym.onrender.com'
 }));
 
 mongoose.connect(process.env.MONGO_URI, {
