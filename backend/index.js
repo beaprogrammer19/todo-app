@@ -7,7 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   origin: 'https://todo-app-1-23ym.onrender.com'
+
 }));
+app.get('/test', (req, res) => {
+  res.json({ message: "API is working!" });
+});
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
